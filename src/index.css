@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.box{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+}
+.box-color{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+  height: 20px;
+}
+
+.creditcard{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 500px;
+  height: 250px;
+  padding-right: 50px;
+
+}
