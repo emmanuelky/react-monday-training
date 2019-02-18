@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
+// Defining of the component Random
 class Random extends Component {
   render() {
-   let randomValue = this.props.min + Math.floor(Math.random() * (this.props.max + Math.floor(Math.random())))
+    let randomValue = this.props.min + Math.floor(Math.random() * (this.props.max-this.props.min+1))
     return (
-      <div>
-      Random value between 1 {this.props.mins} and {this.props.max} => {randomValue}
+      <div className="box">
+        Random value between {this.props.min} and {this.props.max} => {randomValue}
       </div>
-    )
+    );
   }
 }
 

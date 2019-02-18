@@ -1,17 +1,25 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
+// Defining the component CreditCard
 class CreditCard extends Component {
   render() {
-    
-
     return (
-      <div className="creditcard">
-      <h1>{this.props.type}</h1> 
-      <h2>{this.props.number}</h2> 
-      <h3>{this.props.expirationMonth} {this.props.expirationYear} {this.props.bank}</h3> 
-      <h3>{this.props.owner}</h3> {this.props.bgColor} {this.props.color}
+      <div className="CreditCard" style={{
+        backgroundColor: this.props.bgColor,
+        color: this.props.color,
+      }}>
+        <div className="type">
+          {this.props.type === "Visa" && <img src="https://resources.mynewsdesk.com/image/upload/ojf8ed4taaxccncp6pcp.png" />}
+          {this.props.type === "Master Card" && <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/MasterCard_early_1990s_logo.svg" />}
+        </div>
+        <div className="number">xxxx xxxx xxxx {this.props.number.substr(-4)}</div>
+        <div className="expires-bank">
+          <span>Expires {('0'+this.props.expirationMonth).substr(-2)}/{this.props.expirationYear.toString().substr(2)} </span>
+          <span className="bank">{this.props.bank}</span>
+        </div>
+        <div className="owner">{this.props.owner}</div>
       </div>
-    )
+    );
   }
 }
 

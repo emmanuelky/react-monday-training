@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -13,27 +13,54 @@ code {
     monospace;
 }
 
-.box{
+.box {
   border: 1px solid black;
   padding: 5px;
-  margin: 3px;
-  text-align: center;
+  margin: 10px 0;
 }
-.box-color{
-  border: 1px solid black;
-  padding: 5px;
-  margin: 3px;
+
+.BoxColor {
   text-align: center;
+  padding: 20px;
+}
+
+.CreditCard {
+  margin: 10px 0;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.CreditCard .type {
+  text-align: right;
+}
+
+.CreditCard .type img {
   height: 20px;
 }
 
-.creditcard{
-  display: flex;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 20px;
-  width: 500px;
-  height: 250px;
-  padding-right: 50px;
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
 
+.CreditCard .bank {
+  margin-left: 20px;
+}
+
+.Rating {
+  font-size: 2rem;
+}
+
+.DriverCard {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.DriverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
 }
