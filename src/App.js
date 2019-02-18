@@ -8,7 +8,6 @@ import Rating from './Rating';
 import './App.css';
 
 
-
 class App extends Component {
   render() {
     return (
@@ -39,12 +38,12 @@ class App extends Component {
           color="white" />
 
         <CreditCard 
-          type="Visa"
+          type="Master Card"
           number="0123456789016984"
           expirationMonth={12}
           expirationYear={2019}
-          bank="Name of the Bank"
-          owner="Firstname Lastname"
+          bank="Sparkasse"
+          owner="Emmanuel Iyere"
           bgColor="#eecc55"
           color="white" />
 
